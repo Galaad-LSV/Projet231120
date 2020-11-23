@@ -13,7 +13,8 @@ namespace Projet231120.Models
         private int _remise;
         #endregion
         #region Constructeurs
-        public Professionnel(int volumeNegocie, int remise): base()
+        public Professionnel(int volumeNegocie, int remise, string leNom, int id, string lePrenom, string Ladresse, Ville laVille, float coordonneX, float coordonneY)
+        : base (id, leNom, lePrenom, Ladresse, laVille, coordonneX, coordonneY)
         {
             VolumeNegocie = volumeNegocie;
             Remise = remise;
