@@ -25,7 +25,7 @@ namespace Projet231120.Vues
 
         private void boxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Box from1 = new Box();
+            FormBox from1 = new FormBox();
             from1.Show();
             this.Hide();
         }
@@ -56,6 +56,11 @@ namespace Projet231120.Vues
             Client from1 = new Client();
             from1.Show();
             this.Hide();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
