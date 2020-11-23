@@ -117,10 +117,15 @@ namespace Projet231120
             d1.Columns.Add("Nom", typeof(string));
             d1.Columns.Add("Code Postal", typeof(int));
             dgvBox.Refresh();
-            foreach(Ville unVille in Ville.GetAllVille)
+            foreach(Ville unVille in Ville.CollClassesVille)
             {
-                new Ville(d1.Rows.Add())
+                d1.Rows.Add(unVille.Id, unVille.Nom, unVille.CodePostal);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

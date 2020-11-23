@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,17 +32,7 @@ namespace Projet231120.Models
         public List<Box> LesBox { get => _lesBox; set => _lesBox = value; }
         #endregion
         #region Methodes
-        public List<Box> GetAllBox()
-        {
-            //retourne la liste des box dans une ville
-            List<Box> uneListe = new List<Box>();
-            foreach (Box unBox in this._lesBox)
-            {
-                uneListe.Add(unBox);
-            }
 
-            return uneListe;
-        }
         #endregion
     }
 }
