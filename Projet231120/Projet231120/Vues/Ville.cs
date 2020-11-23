@@ -76,16 +76,16 @@ namespace Projet231120
             Livreur l2 = new Livreur(2, "Henaff", "Melvin");
             Livreur l3 = new Livreur(3,"Marmonnier","Adrien");
             Livreur l4 = new Livreur(4, "Girardin", "Raoul");
-            v1._lesBox.Add(b1);
-            v2._lesBox.Add(b2);
-            v1._lesBox.Add(b3);
-            v2._lesBox.Add(b4);
-            v3._lesBox.Add(b5);
-            v3._lesBox.Add(b6);
-            v4._lesBox.Add(b7);
-            v4._lesBox.Add(b8);
-            v5._lesBox.Add(b9);
-            v5._lesBox.Add(b10);
+            v1.LesBox.Add(b1);
+            v2.LesBox.Add(b2);
+            v1.LesBox.Add(b3);
+            v2.LesBox.Add(b4);
+            v3.LesBox.Add(b5);
+            v3.LesBox.Add(b6);
+            v4.LesBox.Add(b7);
+            v4.LesBox.Add(b8);
+            v5.LesBox.Add(b9);
+            v5.LesBox.Add(b10);
 
 
         }
