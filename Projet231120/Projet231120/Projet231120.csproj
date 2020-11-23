@@ -50,6 +50,7 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Compartiment.cs" />
     <Compile Include="Models\Individuel.cs" />
+    <Compile Include="Models\Professionnel.cs" />
     <Compile Include="Vues\Box.cs">
       <SubType>Form</SubType>
     </Compile>
