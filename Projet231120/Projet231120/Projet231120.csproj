@@ -48,11 +48,41 @@
   <ItemGroup>
     <Compile Include="Models\Box.cs" />
     <Compile Include="Models\Individuel.cs" />
-    <Compile Include="Vues\Form1.cs">
+    <Compile Include="Vues\Box.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vues\Box.Designer.cs">
+      <DependentUpon>Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Colis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Colis.Designer.cs">
+      <DependentUpon>Colis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Compartiment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Compartiment.Designer.cs">
+      <DependentUpon>Compartiment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Livreur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Livreur.Designer.cs">
+      <DependentUpon>Livreur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Ville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Ville.Designer.cs">
+      <DependentUpon>Ville.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Ville.cs" />
     <Compile Include="Program.cs" />
