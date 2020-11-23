@@ -13,7 +13,8 @@ namespace Projet231120.Models
         #endregion
 
         #region Constructeurs
-        public Individuel(int coupon)
+        public Individuel(int coupon, string leNom, int id, string lePrenom, string Ladresse, Ville laVille, float coordonneX, float coordonneY) 
+            : base (id,leNom,lePrenom,Ladresse,laVille,coordonneX,coordonneY)
         {
             _coupon = coupon;
         }
