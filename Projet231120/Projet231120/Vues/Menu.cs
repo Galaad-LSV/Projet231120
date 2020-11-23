@@ -27,35 +27,35 @@ namespace Projet231120.Vues
         {
             Box from1 = new Box();
             from1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void compartimentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Compartiment from1 = new Compartiment();
             from1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void colisToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Colis from1 = new Colis();
             from1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void livreurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Livreur from1 = new Livreur();
             from1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Client from1 = new Client();
             from1.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
