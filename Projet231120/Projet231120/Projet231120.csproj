@@ -116,6 +116,9 @@
     <EmbeddedResource Include="Vues\Compartiment.resx">
       <DependentUpon>Compartiment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vues\Livreur.resx">
+      <DependentUpon>Livreur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\Ville.resx">
       <DependentUpon>Ville.cs</DependentUpon>
     </EmbeddedResource>
