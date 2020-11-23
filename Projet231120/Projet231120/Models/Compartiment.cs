@@ -11,14 +11,16 @@ namespace Projet231120.Models
         #region Attributs
         private static List<Compartiment> collClassCompartiment = new List<Compartiment>();
 
+        private int _idCompartiment;
         private int _positionX;
         private int _positionY;
         private Box _leBox;
         #endregion
 
         #region Constructeur
-        public Compartiment(int positionX, int positionY, Box leBox)
+        public Compartiment(int idCompartiment,int positionX, int positionY, Box leBox)
         {
+            this._idCompartiment = idCompartiment;
             this._positionY = positionY;
             this._positionX = positionX;
             _leBox = leBox;
@@ -30,6 +32,7 @@ namespace Projet231120.Models
         public static List<Compartiment> CollClassCompartiment { get => collClassCompartiment; set => collClassCompartiment = value; }
         public int PositionX { get => _positionX; set => _positionX = value; }
         public int PositionY { get => _positionY; set => _positionY = value; }
+        public int IdCompartiment { get => _idCompartiment; set => _idCompartiment = value; }
         #endregion
 
         #region Methode
