@@ -13,6 +13,7 @@ namespace Projet231120.Models
 
         private int _positionX;
         private int _positionY;
+        private int _test;
         private Box _leBox;
         #endregion
 
