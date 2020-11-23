@@ -11,13 +11,15 @@ namespace Projet231120.Models
         #region Attributs
         private static List<Colis> collClasseColis = new List<Colis>();
         private int _id;
+        private string _etat;
         private string _volume;
         #endregion
 
         #region Constructeur
-        public Colis(int id, string volume)
+        public Colis(int id, string volume,string etat)
         {
             _id = id;
+            Etat = etat;
             _volume = volume;
             collClasseColis.Add(this);
         }
@@ -27,9 +29,15 @@ namespace Projet231120.Models
         internal static List<Colis> CollClasseColis { get => collClasseColis; set => collClasseColis = value; }
         public int Id { get => _id; set => _id = value; }
         public string Volume { get => _volume; set => _volume = value; }
+        public string Etat { get => _etat; set => _etat = value; }
         #endregion
 
         #region Méthodes
+
+        public string getetat()
+        {
+
+        }
         #endregion
 
     }

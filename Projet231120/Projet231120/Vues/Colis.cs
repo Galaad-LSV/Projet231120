@@ -12,9 +12,21 @@ namespace Projet231120.Vues
 {
     public partial class Colis : Form
     {
+
+
         public Colis()
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         
+        }
+       
     }
 }

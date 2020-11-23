@@ -113,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vues\Box.resx">
+      <DependentUpon>Box.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\Colis.resx">
       <DependentUpon>Colis.cs</DependentUpon>
     </EmbeddedResource>
