@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet231120.Vues
 {
-    public partial class Box : Form
+    public partial class FormBox : Form
     {
-        public Box()
+        public FormBox()
         {
             InitializeComponent();
         }

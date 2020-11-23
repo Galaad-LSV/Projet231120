@@ -53,11 +53,11 @@
     <Compile Include="Models\Individuel.cs" />
     <Compile Include="Models\Livreur.cs" />
     <Compile Include="Models\Professionnel.cs" />
-    <Compile Include="Vues\Box.cs">
+    <Compile Include="Vues\FormBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Box.Designer.cs">
-      <DependentUpon>Box.cs</DependentUpon>
+    <Compile Include="Vues\FormBox.Designer.cs">
+      <DependentUpon>FormBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Vues\Client.cs">
       <SubType>Form</SubType>
@@ -101,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vues\FormBox.resx">
+      <DependentUpon>FormBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\Compartiment.resx">
       <DependentUpon>Compartiment.cs</DependentUpon>
     </EmbeddedResource>
