@@ -105,5 +105,22 @@ namespace Projet231120
             b4.LesLivreur.Add(l4);
 
         }
+
+        private void btnCreer_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void RemplirDGV(Ville param)
+        {
+            DataTable d1 = new DataTable();
+            d1.Columns.Add("ID", typeof(int));
+            d1.Columns.Add("Nom", typeof(string));
+            d1.Columns.Add("Code Postal", typeof(int));
+            dgvBox.Refresh();
+            foreach(Ville unVille in Ville.GetAllVille)
+            {
+                new Ville(d1.Rows.Add())
+            }
+        }
     }
 }
