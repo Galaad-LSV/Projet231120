@@ -22,6 +22,7 @@ namespace Projet231120.Models
             this._positionY = positionY;
             this._positionX = positionX;
             _leBox = leBox;
+            CollClassCompartiment.Add(this);
         }
         #endregion
 
