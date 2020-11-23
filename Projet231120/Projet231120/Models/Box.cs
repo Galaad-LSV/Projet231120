@@ -13,14 +13,14 @@ namespace Projet231120.Models
         private int _id;
         private string _adresse;
         private Ville _laVille;
-        private int _gpsX;
-        private int _gpsY;
+        private float _gpsX;
+        private float _gpsY;
         private List<Compartiment> _lesCompartiments;
         private List<Livreur> _lesLivreur;
         #endregion
 
         #region Constructeurs
-        public Box(int id, string adresse, int gpsX, int gpsY, Ville laVille)
+        public Box(int id, string adresse, float gpsX, float gpsY, Ville laVille)
         {
             _id = id;
             _adresse = adresse;
@@ -36,8 +36,8 @@ namespace Projet231120.Models
         #region Getters Setters
         public int Id { get => _id; set => _id = value; }
         public string Adresse { get => _adresse; set => _adresse = value; }
-        public int GpsX { get => _gpsX; set => _gpsX = value; }
-        public int GpsY { get => _gpsY; set => _gpsY = value; }
+        public float GpsX { get => _gpsX; set => _gpsX = value; }
+        public float GpsY { get => _gpsY; set => _gpsY = value; }
         public List<Compartiment> LesCompartiments { get => _lesCompartiments; set => _lesCompartiments = value; }
         public List<Livreur> LesLivreur { get => _lesLivreur; set => _lesLivreur = value; }
         public Ville LaVille { get => _laVille; set => _laVille = value; }

@@ -25,31 +25,31 @@ namespace Projet231120.Vues
             Ville v3 = new Ville(3, "Rennes", 35000);
             Ville v4 = new Ville(4, "Paris", 75000);
             Ville v5 = new Ville(5, "Plugufan", 2970);
-            Models.Box b1 = new Models.Box(1, "3 rue des potiers0", 15, 45);
-            Models.Box b2 = new Models.Box(2, "35 rue Charles DeGaulle", 45, 85);
-            Models.Box b3 = new Models.Box(3, "130 route de bénodet", 16, 23);
-            Models.Box b4 = new Models.Box(4, "11 rue des chateuax", 96, 45);
-            Models.Box b5 = new Models.Box(5, "13 rue du Vendrdi", 135, 15);
-            Models.Box b6 = new Models.Box(6, "5 carrefour de apex", 18, 9);
-            Models.Box b7 = new Models.Box(7, "1 Rue du Valhalla", 48, 65);
-            Models.Box b8 = new Models.Box(8, "45 rue des chouxFleurs", 78, 2);
-            Models.Box b9 = new Models.Box(9, "95 alle de la sonnerie", 96, 4);
-            Models.Box b10 = new Models.Box(10, "7 rue du soixantedixmoinsun", 2, 6);
-            Models.Colis c1 = new Models.Colis(1, "15");
-            Models.Colis c2 = new Models.Colis(2, "23");
-            Models.Colis c3 = new Models.Colis(3, "54");
-            Models.Colis c4 = new Models.Colis(4, "95");
-            Models.Colis c5 = new Models.Colis(5, "250");
-            Models.Colis c6 = new Models.Colis(6, "145");
-            Models.Colis c7 = new Models.Colis(7, "159");
-            Models.Colis c8 = new Models.Colis(8, "155");
-            Models.Colis c9 = new Models.Colis(9, "1");
-            Models.Colis c10 = new Models.Colis(10, "26");
-            Models.Colis c11 = new Models.Colis(11, "45");
-            Models.Colis c12 = new Models.Colis(12, "12");
-            Models.Colis c13 = new Models.Colis(13, "56");
-            Models.Colis c14 = new Models.Colis(14, "5");
-            Models.Colis c15 = new Models.Colis(15, "19");
+            Models.Box b1 = new Models.Box(1, "3 rue des potiers0", 15, 45,v1);
+            Models.Box b2 = new Models.Box(2, "35 rue Charles DeGaulle", 45, 85, v1);
+            Models.Box b3 = new Models.Box(3, "130 route de bénodet", 16, 23,v1);
+            Models.Box b4 = new Models.Box(4, "11 rue des chateuax", 96, 45,v2);
+            Models.Box b5 = new Models.Box(5, "13 rue du Vendrdi", 135, 15,v2);
+            Models.Box b6 = new Models.Box(6, "5 carrefour de apex", 18, 9,v3);
+            Models.Box b7 = new Models.Box(7, "1 Rue du Valhalla", 48, 65,v3);
+            Models.Box b8 = new Models.Box(8, "45 rue des chouxFleurs", 78, 2,v4);
+            Models.Box b9 = new Models.Box(9, "95 alle de la sonnerie", 96, 4,v4);
+            Models.Box b10 = new Models.Box(10, "7 rue du soixantedixmoinsun", 2, 6,v5);
+            Models.Colis c1 = new Models.Colis(1, "15","");
+            Models.Colis c2 = new Models.Colis(2, "23", "");
+            Models.Colis c3 = new Models.Colis(3, "54", "");
+            Models.Colis c4 = new Models.Colis(4, "95", "");
+            Models.Colis c5 = new Models.Colis(5, "250", "");
+            Models.Colis c6 = new Models.Colis(6, "145", "");
+            Models.Colis c7 = new Models.Colis(7, "159", "");
+            Models.Colis c8 = new Models.Colis(8, "155", "");
+            Models.Colis c9 = new Models.Colis(9, "1", "");
+            Models.Colis c10 = new Models.Colis(10, "26", "");
+            Models.Colis c11 = new Models.Colis(11, "45", "");
+            Models.Colis c12 = new Models.Colis(12, "12", "");
+            Models.Colis c13 = new Models.Colis(13, "56", "");
+            Models.Colis c14 = new Models.Colis(14, "5", "");
+            Models.Colis c15 = new Models.Colis(15, "19", "");
             Models.Compartiment co1 = new Models.Compartiment(1, 15, 65, b10);
             Models.Compartiment co2 = new Models.Compartiment(2, 14, 65, b10);
             Models.Compartiment co3 = new Models.Compartiment(3, 13, 45, b9);
@@ -82,7 +82,7 @@ namespace Projet231120.Vues
             {
                 cboVille.Items.Add(uneVille.Nom);
             }
-            txtId.Text = "1";
+            txtId.Text =  Utilitaires.Conversion.ConversionIntEnString(Utilitaires.GestionCollection.GetNouvelIndexBox()); // conversion de int en string le dernier id
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -133,7 +133,7 @@ namespace Projet231120.Vues
             /// recuperer les datas et creer objet box
             /// 
 
-            new Models.Box(Utilitaires.GestionCollection.GetNouvelIndexBox(), txtAdresse.Text, /*txtX.Text, txtY.text, uneville*/);
+            new Models.Box(Utilitaires.GestionCollection.GetNouvelIndexBox(), txtAdresse.Text, Utilitaires.Conversion.ConversionStringEnFloat(txtCoordX.Text), Utilitaires.Conversion.ConversionStringEnFloat(txtCoordY.Text), cboVille.Text);
 
 
             DataTable d1 = new DataTable();
@@ -141,14 +141,11 @@ namespace Projet231120.Vues
             d1.Columns.Add("Id", typeof(int));
             d1.Columns.Add("Adresse", typeof(string));
             d1.Columns.Add("Ville", typeof(string));
-            d1.Columns.Add("Code Postal", typeof(int));
+            d1.Columns.Add("Code Postal", typeof(int));          
 
-            
+         
 
-            int id = 0;
-
-            d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text);
-            id++;
+            d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text); 
 
             
                 
