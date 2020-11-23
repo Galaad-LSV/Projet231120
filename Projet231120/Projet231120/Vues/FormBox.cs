@@ -114,7 +114,7 @@ namespace Projet231120.Vues
             {
                 foreach (Models.Box unBox in param.GetAllBox())
                 {
-                    d1.Rows.Add(unBox.Id, unBox.Adresse, uneVille.Nom, uneVille.CodePostal);
+                    new Box(d1.Rows.Add(unBox.Id, unBox.Adresse, uneVille.Nom, uneVille.CodePostal));
                 }
             }
             dgvBox.DataSource = d1;
