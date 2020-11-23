@@ -114,7 +114,7 @@ namespace Projet231120.Vues
             {
                 foreach (Models.Box unBox in param.GetAllBox())
                 {
-                    new Box(d1.Rows.Add(unBox.Id, unBox.Adresse, uneVille.Nom, uneVille.CodePostal));
+                    d1.Rows.Add(unBox.Id, unBox.Adresse, uneVille.Nom, uneVille.CodePostal);
                 }
             }
             dgvBox.DataSource = d1;
@@ -129,6 +129,13 @@ namespace Projet231120.Vues
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
+
+            /// recuperer les datas et creer objet box
+            /// 
+
+            new Models.Box(Utilitaires.GestionCollection.GetNouvelIndexBox(), txtAdresse.Text, /*txtX.Text, txtY.text, uneville*/);
+
+
             DataTable d1 = new DataTable();
 
             d1.Columns.Add("Id", typeof(int));
@@ -138,11 +145,7 @@ namespace Projet231120.Vues
 
             dgvBox.Refresh();
 
-            int id = 0;
-
-            d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text);
-            id++;
-
+            
             
                 
             dgvBox.DataSource = d1;

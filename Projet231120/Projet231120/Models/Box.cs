@@ -12,6 +12,7 @@ namespace Projet231120.Models
         public static List<Box> collClasseBox = new List<Box>();
         private int _id;
         private string _adresse;
+        private Ville _laVille;
         private int _gpsX;
         private int _gpsY;
         private List<Compartiment> _lesCompartiments;
@@ -19,7 +20,7 @@ namespace Projet231120.Models
         #endregion
 
         #region Constructeurs
-        public Box(int id, string adresse, int gpsX, int gpsY)
+        public Box(int id, string adresse, int gpsX, int gpsY, Ville laVille)
         {
             _id = id;
             _adresse = adresse;
@@ -28,6 +29,7 @@ namespace Projet231120.Models
             _lesLivreur = new List<Livreur>();
             _lesCompartiments = new List<Compartiment>();
             collClasseBox.Add(this);
+            _laVille = laVille;
         }
         #endregion
 
@@ -38,10 +40,11 @@ namespace Projet231120.Models
         public int GpsY { get => _gpsY; set => _gpsY = value; }
         public List<Compartiment> LesCompartiments { get => _lesCompartiments; set => _lesCompartiments = value; }
         public List<Livreur> LesLivreur { get => _lesLivreur; set => _lesLivreur = value; }
+        public Ville LaVille { get => _laVille; set => _laVille = value; }
         #endregion
 
         #region Methodes
-        
+
 
         #endregion
     }

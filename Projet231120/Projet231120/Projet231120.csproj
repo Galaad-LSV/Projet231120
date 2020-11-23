@@ -56,6 +56,7 @@
     <Compile Include="Models\Individuel.cs" />
     <Compile Include="Models\Livreur.cs" />
     <Compile Include="Models\Professionnel.cs" />
+    <Compile Include="Utilitaires\GestionCollection.cs" />
     <Compile Include="Utilitaires\GPS.cs" />
     <Compile Include="Vues\Box.cs">
       <SubType>Form</SubType>
