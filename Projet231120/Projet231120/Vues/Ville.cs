@@ -76,6 +76,8 @@ namespace Projet231120
             Livreur l2 = new Livreur(2, "Henaff", "Melvin");
             Livreur l3 = new Livreur(3,"Marmonnier","Adrien");
             Livreur l4 = new Livreur(4, "Girardin", "Raoul");
+            v1.LesBox.Add(b1);
+
         }
     }
 }
