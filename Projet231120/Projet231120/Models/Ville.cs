@@ -21,7 +21,7 @@ namespace Projet231120.Models
             _id = id;
             _nom = nom;
             _codePostal = codePostal;
-            LesBox = new List<Box>();
+            _lesBox = new List<Box>();
             CollClassesVille.Add(this);
         }
         #endregion
