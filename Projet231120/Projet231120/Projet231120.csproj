@@ -125,6 +125,9 @@
     <EmbeddedResource Include="Vues\Livreur.resx">
       <DependentUpon>Livreur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vues\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\Ville.resx">
       <DependentUpon>Ville.cs</DependentUpon>
     </EmbeddedResource>
