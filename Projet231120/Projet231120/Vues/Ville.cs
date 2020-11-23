@@ -86,6 +86,7 @@ namespace Projet231120
             v4.LesBox.Add(b8);
             v5.LesBox.Add(b9);
             v5.LesBox.Add(b10);
+            co1.
 
 
         }

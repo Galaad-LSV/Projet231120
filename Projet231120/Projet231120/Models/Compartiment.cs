@@ -35,6 +35,7 @@ namespace Projet231120.Models
         public int PositionX { get => _positionX; set => _positionX = value; }
         public int PositionY { get => _positionY; set => _positionY = value; }
         public int IdCompartiment { get => _idCompartiment; set => _idCompartiment = value; }
+        public List<Colis> LesColis { get => _lesColis; set => _lesColis = value; }
         #endregion
 
         #region Methode
