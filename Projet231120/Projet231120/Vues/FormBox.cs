@@ -143,9 +143,13 @@ namespace Projet231120.Vues
             d1.Columns.Add("Ville", typeof(string));
             d1.Columns.Add("Code Postal", typeof(int));
 
-            dgvBox.Refresh();
-
             
+
+            int id = 0;
+
+            d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text);
+            id++;
+
             
                 
             dgvBox.DataSource = d1;
