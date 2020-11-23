@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet231120.Models
 {
-    class Ville
+    public class Ville
     {
         #region Attributs
         public static List<Ville> CollClassesVille = new List<Ville>();

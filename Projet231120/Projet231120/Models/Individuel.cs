@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet231120.Models
 {
-    class Individuel : Client
+    public class Individuel : Client
     {
         #region Attributs
         private int _coupon;

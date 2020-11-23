@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet231120.Models
 {
-    class Professionnel: Client
+    public class Professionnel: Client
     {
         #region Attributs
         private int _volumeNegocie;
