@@ -12,6 +12,7 @@ namespace Projet231120.Models
         private static List<Colis> collClasseColis = new List<Colis>();
         private int _id;
         private string _volume;
+        private int test;
         #endregion
 
         #region Constructeur
