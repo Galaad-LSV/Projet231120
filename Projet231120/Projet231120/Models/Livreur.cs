@@ -13,6 +13,7 @@ namespace Projet231120.Models
         private int _idLivreur;
         private string _nomLivreur;
         private string _prenomLivreur;
+        private Dictionary<DateTime, Box> _dictionnaireBox;
 
 
         #endregion
@@ -23,6 +24,7 @@ namespace Projet231120.Models
             NomLivreur = nomLivreur;
             PrenomLivreur = prenomLivreur;
             Livreur.collClasseLivreur.Add(this);
+            DictionnaireBox = new Dictionary<DateTime, Box>();
         }
 
 
@@ -31,6 +33,7 @@ namespace Projet231120.Models
         public int IdLivreur { get => _idLivreur; set => _idLivreur = value; }
         public string NomLivreur { get => _nomLivreur; set => _nomLivreur = value; }
         public string PrenomLivreur { get => _prenomLivreur; set => _prenomLivreur = value; }
+        public Dictionary<DateTime, Box> DictionnaireBox { get => _dictionnaireBox; set => _dictionnaireBox = value; }
         #endregion
         #region Méthodes
         #endregion
