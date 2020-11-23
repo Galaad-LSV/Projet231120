@@ -8,5 +8,29 @@ namespace Projet231120.Models
 {
     class Ville
     {
+        #region Attributs
+        public static List<Ville> CollClassesVille = new List<Ville>();
+        private int _id;
+        private string _nom;
+        private int _codePostal;
+        private List<Box> _lesBox;
+        #endregion
+        #region Constructeurs
+        public Ville(int id, string nom, int codePostal, List<Box> lesBox)
+        {
+            _id = id;
+            _nom = nom;
+            _codePostal = codePostal;
+            _lesBox = lesBox;
+            CollClassesVille.Add(this);
+        }
+        #endregion
+        #region Getters-Setteurs
+        public int Id { get => _id; set => _id = value; }
+        public string Nom { get => _nom; set => _nom = value; }
+        public int CodePostal { get => _codePostal; set => _codePostal = value; }
+        #endregion
+        #region Methodes
+        #endregion
     }
 }
