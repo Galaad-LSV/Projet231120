@@ -40,7 +40,7 @@
             this.txtCP = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboVille = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBox)).BeginInit();
             this.SuspendLayout();
@@ -151,13 +151,14 @@
             this.txtAdresse.Size = new System.Drawing.Size(268, 22);
             this.txtAdresse.TabIndex = 11;
             // 
-            // comboBox1
+            // cboVille
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(422, 163);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 12;
+            this.cboVille.FormattingEnabled = true;
+            this.cboVille.Location = new System.Drawing.Point(422, 163);
+            this.cboVille.Name = "cboVille";
+            this.cboVille.Size = new System.Drawing.Size(121, 24);
+            this.cboVille.TabIndex = 12;
+            this.cboVille.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -175,7 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 486);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboVille);
             this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtCP);
@@ -190,6 +191,7 @@
             this.Controls.Add(this.dgvBox);
             this.Name = "FormBox";
             this.Text = "Box";
+            this.Load += new System.EventHandler(this.FormBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -210,7 +212,7 @@
         private System.Windows.Forms.TextBox txtCP;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtAdresse;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboVille;
         private System.Windows.Forms.Label label6;
     }
 }
