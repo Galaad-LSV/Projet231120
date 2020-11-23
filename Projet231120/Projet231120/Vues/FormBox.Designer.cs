@@ -42,6 +42,7 @@
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.cboVille = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnRetour = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,6 +112,7 @@
             this.btnCreer.TabIndex = 6;
             this.btnCreer.Text = "Créer";
             this.btnCreer.UseVisualStyleBackColor = true;
+            this.btnCreer.Click += new System.EventHandler(this.btnCreer_Click);
             // 
             // btnModifier
             // 
@@ -170,11 +172,22 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Id";
             // 
+            // btnRetour
+            // 
+            this.btnRetour.Location = new System.Drawing.Point(12, 12);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(75, 23);
+            this.btnRetour.TabIndex = 14;
+            this.btnRetour.Text = "Retour";
+            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
+            // 
             // FormBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 486);
+            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cboVille);
             this.Controls.Add(this.txtAdresse);
@@ -214,5 +227,6 @@
         private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.ComboBox cboVille;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnRetour;
     }
 }
