@@ -15,6 +15,7 @@ namespace Projet231120.Models
         private int _positionX;
         private int _positionY;
         private Box _leBox;
+        private List<Colis> _lesColis;
         #endregion
 
         #region Constructeur
@@ -24,6 +25,7 @@ namespace Projet231120.Models
             this._positionY = positionY;
             this._positionX = positionX;
             _leBox = leBox;
+            _lesColis = new List<Colis>();
             CollClassCompartiment.Add(this);
         }
         #endregion
