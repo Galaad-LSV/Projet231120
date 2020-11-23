@@ -107,11 +107,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vues\Colis.resx">
+      <DependentUpon>Colis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\FormBox.resx">
       <DependentUpon>FormBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vues\Compartiment.resx">
       <DependentUpon>Compartiment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\Livreur.resx">
+      <DependentUpon>Livreur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vues\Ville.resx">
       <DependentUpon>Ville.cs</DependentUpon>

@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvBox = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn = new System.Windows.Forms.Button();
+            this.btnCreer = new System.Windows.Forms.Button();
+            this.btnModifier = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
             this.txtCP = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvBox
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(333, 324);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBox.Location = new System.Drawing.Point(191, 293);
+            this.dgvBox.Name = "dgvBox";
+            this.dgvBox.RowHeadersWidth = 51;
+            this.dgvBox.RowTemplate.Height = 24;
+            this.dgvBox.Size = new System.Drawing.Size(583, 181);
+            this.dgvBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -103,27 +103,27 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Code Postal";
             // 
-            // button1
+            // btnCreer
             // 
-            this.button1.Location = new System.Drawing.Point(230, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCreer.Location = new System.Drawing.Point(264, 235);
+            this.btnCreer.Name = "btnCreer";
+            this.btnCreer.Size = new System.Drawing.Size(75, 23);
+            this.btnCreer.TabIndex = 6;
+            this.btnCreer.Text = "Créer";
+            this.btnCreer.UseVisualStyleBackColor = true;
             // 
-            // btn
+            // btnModifier
             // 
-            this.btn.Location = new System.Drawing.Point(318, 276);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(75, 23);
-            this.btn.TabIndex = 7;
-            this.btn.Text = "Modifier";
-            this.btn.UseVisualStyleBackColor = true;
+            this.btnModifier.Location = new System.Drawing.Point(422, 235);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.TabIndex = 7;
+            this.btnModifier.Text = "Modifier";
+            this.btnModifier.UseVisualStyleBackColor = true;
             // 
             // btnEffacer
             // 
-            this.btnEffacer.Location = new System.Drawing.Point(531, 276);
+            this.btnEffacer.Location = new System.Drawing.Point(593, 235);
             this.btnEffacer.Name = "btnEffacer";
             this.btnEffacer.Size = new System.Drawing.Size(75, 23);
             this.btnEffacer.TabIndex = 8;
@@ -169,7 +169,7 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Id";
             // 
-            // Box
+            // FormBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,17 +180,17 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtCP);
             this.Controls.Add(this.btnEffacer);
-            this.Controls.Add(this.btn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnModifier);
+            this.Controls.Add(this.btnCreer);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Box";
+            this.Controls.Add(this.dgvBox);
+            this.Name = "FormBox";
             this.Text = "Box";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,14 +198,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnCreer;
+        private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnEffacer;
         private System.Windows.Forms.TextBox txtCP;
         private System.Windows.Forms.TextBox txtId;
