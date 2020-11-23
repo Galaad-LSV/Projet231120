@@ -76,6 +76,13 @@ namespace Projet231120.Vues
             Models.Livreur l2 = new Models.Livreur(2, "Henaff", "Melvin");
             Models.Livreur l3 = new Models.Livreur(3, "Marmonnier", "Adrien");
             Models.Livreur l4 = new Models.Livreur(4, "Girardin", "Raoul");
+
+
+            foreach (Ville uneVille in Ville.CollClassesVille)
+            {
+                cboVille.Items.Add(uneVille.Nom);
+            }
+            txtId.Text = "1";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,7 +92,7 @@ namespace Projet231120.Vues
 
             foreach (Ville uneVille in Ville.CollClassesVille)
             {
-                if (uneVille.Id.ToString() == param1)
+                if (uneVille.Nom.ToString() == param1)
                 {
                     param2 = uneVille;
                 }
@@ -103,15 +110,48 @@ namespace Projet231120.Vues
             d1.Columns.Add("Code Postal", typeof(int));
 
             dgvBox.Refresh();
-
-            foreach (Models.Box unBox in param.GetAllBox())
+            foreach (Models.Ville uneVille in Models.Ville.CollClassesVille)
             {
-                foreach(Models.Ville uneVille in Ville.CollClassesVille)
+                foreach (Models.Box unBox in param.GetAllBox())
                 {
                     d1.Rows.Add(unBox.Id, unBox.Adresse, uneVille.Nom, uneVille.CodePostal);
                 }
-               
             }
+            dgvBox.DataSource = d1;
+        }
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            Menu from1 = new Menu();
+            from1.Show();
+            this.Close();
+        }
+
+        private void btnCreer_Click(object sender, EventArgs e)
+        {
+
+            /// recuperer les datas et creer objet box
+            /// 
+
+            new Models.Box(Utilitaires.GestionCollection.GetNouvelIndexBox(), txtAdresse.Text, /*txtX.Text, txtY.text, uneville*/);
+
+
+            DataTable d1 = new DataTable();
+
+            d1.Columns.Add("Id", typeof(int));
+            d1.Columns.Add("Adresse", typeof(string));
+            d1.Columns.Add("Ville", typeof(string));
+            d1.Columns.Add("Code Postal", typeof(int));
+
+            
+
+            int id = 0;
+
+            d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text);
+            id++;
+
+            
+                
             dgvBox.DataSource = d1;
         }
     }
