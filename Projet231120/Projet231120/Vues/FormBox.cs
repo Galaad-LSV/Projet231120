@@ -129,6 +129,7 @@ namespace Projet231120.Vues
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
+            dgvBox.Refresh();
             DataTable d1 = new DataTable();
 
             d1.Columns.Add("Id", typeof(int));
@@ -136,12 +137,9 @@ namespace Projet231120.Vues
             d1.Columns.Add("Ville", typeof(string));
             d1.Columns.Add("Code Postal", typeof(int));
 
-            dgvBox.Refresh();
+            
 
-            int id = 0;
-
-            new Box(d1.Rows.Add(txtId.Text, txtAdresse.Text, cboVille.Text, txtCP.Text));
-            id++;
+           
 
             
                 
