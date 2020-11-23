@@ -15,12 +15,15 @@ namespace Projet231120.Models
         private string _prenom;
         private string _adresse;
         private Ville _laVille;
+        private float _coordonneesX;
+        private float _coordonneesY;
+
         private List<Colis> _lesColis;
 
 
         #endregion
         #region Constructeurs
-        protected Client(int id, string nom, string prenom, string adresse, Ville laVille)
+        protected Client(int id, string nom, string prenom, string adresse, Ville laVille, float coordonneesX, float coordonneesY)
         {
             _id = id;
             _nom = nom;
@@ -29,6 +32,8 @@ namespace Projet231120.Models
             _laVille = laVille;
             _lesColis = new List<Colis>();
             Client.CollClasseClient.Add(this);
+            _coordonneesX = coordonneesX;
+            _coordonneesY = coordonneesY;
         }
         #endregion
         #region Getters Setters
@@ -38,6 +43,8 @@ namespace Projet231120.Models
         public string Adresse { get => _adresse; set => _adresse = value; }
         public Ville LaVille { get => _laVille; set => _laVille = value; }
         public List<Colis> LesColis { get => _lesColis; set => _lesColis = value; }
+        public float CoordonneesX { get => _coordonneesX; set => _coordonneesX = value; }
+        public float CoordonneesY { get => _coordonneesY; set => _coordonneesY = value; }
 
 
         #endregion
