@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet231120.Models
 {
-    class Livreur
+    public class Livreur
     {
         #region Attributs
         public static List<Livreur> collClasseLivreur = new List<Livreur>();
