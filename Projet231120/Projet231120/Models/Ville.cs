@@ -16,12 +16,12 @@ namespace Projet231120.Models
         private List<Box> _lesBox;
         #endregion
         #region Constructeurs
-        public Ville(int id, string nom, int codePostal, List<Box> lesBox)
+        public Ville(int id, string nom, int codePostal)
         {
             _id = id;
             _nom = nom;
             _codePostal = codePostal;
-            _lesBox = lesBox;
+            _lesBox = new List<Box>();
             CollClassesVille.Add(this);
         }
         #endregion
