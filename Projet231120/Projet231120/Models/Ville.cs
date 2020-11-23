@@ -31,6 +31,17 @@ namespace Projet231120.Models
         public int CodePostal { get => _codePostal; set => _codePostal = value; }
         #endregion
         #region Methodes
+        public List<Box> GetAllBox()
+        {
+            //retourne la liste des box dans une ville
+            List<Box> uneListe = new List<Box>();
+            foreach (Box unBox in this._lesBox)
+            {
+                uneListe.Add(unBox);
+            }
+
+            return uneListe;
+        }
         #endregion
     }
 }
