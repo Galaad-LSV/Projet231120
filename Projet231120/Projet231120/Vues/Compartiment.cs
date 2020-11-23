@@ -16,5 +16,10 @@ namespace Projet231120.Vues
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = imageList1.Images[0];
+        }
     }
 }
