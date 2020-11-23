@@ -25,11 +25,11 @@ namespace Projet231120
             Ville v3 = new Ville(3, "Rennes", 35000);
             Ville v4 = new Ville(4,"Paris",75000);
             Ville v5 = new Ville(5,"Plugufan",2970);
-            Box b1 = new Box(1, "3 rue des potiers0", 15, 45);
-            Box b2 = new Box(2, "35 rue Charles DeGaulle", 45, 85);
-            Box b3 = new Box(3, "130 route de bénodet", 16, 23);
-            Box b4 = new Box(4, "11 rue des chateuax", 96, 45);
-            Box b5 = new Box(5, "13 rue du Vendrdi", 135, 15);
+            Box b1 = new Box(1, "3 rue des potiers0", 15, 45,v1);
+            Box b2 = new Box(2, "35 rue Charles DeGaulle", 45, 85,v1);
+            Box b3 = new Box(3, "130 route de bénodet", 16, 23,v2);
+            Box b4 = new Box(4, "11 rue des chateuax", 96, 45,v3);
+            Box b5 = new Box(5, "13 rue du Vendrdi", 135, 15,v4);
 
             Colis c1 = new Colis(1, "15");
             Colis c2 = new Colis(2, "23");
