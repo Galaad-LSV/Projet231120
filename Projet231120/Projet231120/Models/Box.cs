@@ -8,6 +8,7 @@ namespace Projet231120.Models
 {
     public class Box
     {
+        //azoazbeoazebaozeboazeboaze
         #region Attributs
         public static List<Box> collClasseBox = new List<Box>();
         private int _id;
